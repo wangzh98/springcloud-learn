@@ -1,0 +1,22 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name: springcloud-config-server
+    #连接远程仓库
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wangzh98/springcloud-config.git
+          username: wangzh98
+          password: wangzhihang123!
+
+
+#          force-pull: true
+
+#logging:
+#  level:
+#    com.netflix.discovery: 'OFF'
+#    org.springframework.cloud: 'DEBUG'
